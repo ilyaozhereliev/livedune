@@ -59,12 +59,16 @@ export const PasswordRetrieval = () => {
 
             {error && <div className={styles.alert}>{errorInformation}</div>}
 
-            <button className={styles.submit__button} type="submit">
-              {isSending && (
+            {isSending ? (
+              <button className={styles.submit__button} type="submit">
                 <img className={styles.spinner} src={spinner} alt="spinner" />
-              )}
-              Отправить
-            </button>
+                <span>Отправка</span>
+              </button>
+            ) : (
+              <button className={styles.submit__button} type="submit">
+                Отправить
+              </button>
+            )}
           </form>
 
           <button
