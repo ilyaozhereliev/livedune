@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 
 import { facebook, google } from '../../assets/icons';
 import { useAppSelector } from '../../redux/hooks';
+import { baseName } from '../../utils';
 import { Header } from '../Header';
 import styles from './Authorization.module.scss';
 
@@ -19,7 +20,7 @@ export const Authorization = () => {
   const actionButton = 'Регистрация';
 
   const navigateClick = () => {
-    navigate('./registration');
+    navigate(`./${baseName}registration`);
   };
 
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
@@ -91,7 +92,7 @@ export const Authorization = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate('/passwordRetrieval');
+              navigate(`/${baseName}passwordRetrieval`);
             }}
           >
             Забыли пароль?

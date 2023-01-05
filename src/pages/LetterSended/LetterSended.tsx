@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 
 import { letter, logo } from '../../assets/icons';
+import { baseName } from '../../utils';
 import styles from './LetterSended.module.scss';
 
 export const LetterSended = () => {
@@ -24,7 +25,7 @@ export const LetterSended = () => {
             className={styles.submit__button}
             type="button"
             onClick={() => {
-              navigate('/');
+              navigate(`/${baseName}`);
             }}
           >
             Вернуться на главную

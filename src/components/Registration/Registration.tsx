@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router';
 import { facebook, google } from '../../assets/icons';
 import { useAppDispatch } from '../../redux/hooks';
 import { addUser } from '../../redux/usersSlice';
+import { baseName } from '../../utils';
 import { Header } from '../Header';
 import styles from './Registration.module.scss';
 
@@ -24,7 +25,7 @@ export const Registration = () => {
   const validEmail =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,3})$/iu;
   const navigateClick = () => {
-    navigate('/');
+    navigate(`/${baseName}`);
   };
 
   const dispatch = useAppDispatch();
@@ -36,7 +37,7 @@ export const Registration = () => {
       setError(true);
     } else {
       dispatch(addUser({ name, email, password }));
-      navigate('/confirmEmail');
+      navigate(`/${baseName}confirmEmail`);
       setError(false);
     }
   };

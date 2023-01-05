@@ -13,21 +13,33 @@ import { LetterSended } from './pages/LetterSended';
 import { NoLetter } from './pages/NoLetter';
 import { PasswordRetrieval } from './pages/PasswordRetrieval';
 import store from './redux/store';
+import { baseName } from './utils';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Authorization />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/confirmEmail" element={<ConfirmEmail />} />
-          <Route path="/noLetter" element={<NoLetter />} />
-          <Route path="/passwordRetrieval" element={<PasswordRetrieval />} />
-          <Route path="/successfully" element={<LetterSended />} />
+          <Route path={`/${baseName}}`} element={<Authorization />} />
+          <Route
+            path={`/${baseName}/registration`}
+            element={<Registration />}
+          />
+          <Route
+            path={`/${baseName}/confirmEmail`}
+            element={<ConfirmEmail />}
+          />
+          <Route path={`/${baseName}/noLetter`} element={<NoLetter />} />
+          <Route
+            path={`/${baseName}/passwordRetrieval`}
+            element={<PasswordRetrieval />}
+          />
+
+          <Route path="/livedune/successfully" element={<LetterSended />} />
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 
 import { lock, logo, spinner } from '../../assets/icons';
 import { useAppSelector } from '../../redux/hooks';
+import { baseName } from '../../utils';
 import styles from './PasswordRetrieval.module.scss';
 
 export const PasswordRetrieval = () => {
@@ -27,7 +28,7 @@ export const PasswordRetrieval = () => {
       setIsSending(true);
       setError(false);
       setTimeout(() => {
-        navigate('/successfully');
+        navigate(`/${baseName}successfully`);
         setIsSending(false);
       }, 1500);
     }
@@ -70,7 +71,7 @@ export const PasswordRetrieval = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate('/registration');
+              navigate(`/${baseName}registration`);
             }}
           >
             Отменить

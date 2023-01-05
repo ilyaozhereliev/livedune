@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 
 import { logo } from '../../assets/icons';
+import { baseName } from '../../utils';
 import styles from './NoLetter.module.scss';
 
 export const NoLetter = () => {
@@ -16,7 +17,7 @@ export const NoLetter = () => {
           <button
             className={styles.button}
             onClick={() => {
-              navigate('/registration');
+              navigate(`/${baseName}registration`);
             }}
             type="button"
           >
@@ -62,7 +63,7 @@ export const NoLetter = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate('/registration');
+              navigate(`/${baseName}registration`);
             }}
           >
             Отменить

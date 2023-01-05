@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 
 import { logo } from '../../assets/icons';
 import { useAppSelector } from '../../redux/hooks';
+import { baseName } from '../../utils';
 import styles from './ConfirmEmail.module.scss';
 
 export const ConfirmEmail = () => {
@@ -18,7 +19,7 @@ export const ConfirmEmail = () => {
           <button
             className={styles.button}
             onClick={() => {
-              navigate('/registration');
+              navigate(`/${baseName}registration`);
             }}
             type="button"
           >
@@ -47,7 +48,7 @@ export const ConfirmEmail = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate('/NoLetter');
+              navigate(`/${baseName}NoLetter`);
             }}
           >
             Мне не пришло письмо
