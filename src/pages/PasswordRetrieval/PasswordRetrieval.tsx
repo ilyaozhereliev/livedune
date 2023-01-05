@@ -28,7 +28,7 @@ export const PasswordRetrieval = () => {
       setIsSending(true);
       setError(false);
       setTimeout(() => {
-        navigate(`/${baseName}successfully`);
+        navigate(`/${baseName}/successfully`);
         setIsSending(false);
       }, 1500);
     }
@@ -71,7 +71,7 @@ export const PasswordRetrieval = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate(`/${baseName}registration`);
+              navigate(`/${baseName}/registration`);
             }}
           >
             Отменить

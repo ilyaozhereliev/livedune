@@ -19,7 +19,7 @@ export const ConfirmEmail = () => {
           <button
             className={styles.button}
             onClick={() => {
-              navigate(`/${baseName}registration`);
+              navigate(`/${baseName}/registration`);
             }}
             type="button"
           >
@@ -48,7 +48,7 @@ export const ConfirmEmail = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate(`/${baseName}NoLetter`);
+              navigate(`/${baseName}/NoLetter`);
             }}
           >
             Мне не пришло письмо

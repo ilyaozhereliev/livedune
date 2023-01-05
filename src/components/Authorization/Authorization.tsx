@@ -20,7 +20,7 @@ export const Authorization = () => {
   const actionButton = 'Регистрация';
 
   const navigateClick = () => {
-    navigate(`./${baseName}registration`);
+    navigate(`./${baseName}/registration`);
   };
 
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
@@ -92,7 +92,7 @@ export const Authorization = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate(`/${baseName}passwordRetrieval`);
+              navigate(`/${baseName}/passwordRetrieval`);
             }}
           >
             Забыли пароль?

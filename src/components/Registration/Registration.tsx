@@ -37,7 +37,7 @@ export const Registration = () => {
       setError(true);
     } else {
       dispatch(addUser({ name, email, password }));
-      navigate(`/${baseName}confirmEmail`);
+      navigate(`/${baseName}/confirmEmail`);
       setError(false);
     }
   };

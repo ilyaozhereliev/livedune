@@ -39,7 +39,10 @@ root.render(
             element={<PasswordRetrieval />}
           />
 
-          <Route path="/livedune/successfully" element={<LetterSended />} />
+          <Route
+            path={`/${baseName}/successfully`}
+            element={<LetterSended />}
+          />
         </Routes>
       </BrowserRouter>
     </Provider>

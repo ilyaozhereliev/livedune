@@ -17,7 +17,7 @@ export const NoLetter = () => {
           <button
             className={styles.button}
             onClick={() => {
-              navigate(`/${baseName}registration`);
+              navigate(`/${baseName}/registration`);
             }}
             type="button"
           >
@@ -63,7 +63,7 @@ export const NoLetter = () => {
             className={styles.helper__button}
             type="button"
             onClick={() => {
-              navigate(`/${baseName}registration`);
+              navigate(`/${baseName}/registration`);
             }}
           >
             Отменить
