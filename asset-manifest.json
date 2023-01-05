@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/livedune/static/css/main.9d263f21.css",
-    "main.js": "/livedune/static/js/main.0cfbae2e.js",
+    "main.css": "/livedune/static/css/main.c9cf7095.css",
+    "main.js": "/livedune/static/js/main.f945ece0.js",
     "static/media/logo.svg": "/livedune/static/media/logo.eedffd0ffec3f07e96bce1ad310ddda7.svg",
     "static/media/letter.svg": "/livedune/static/media/letter.56239c581cc49cec75a29c79a3276c78.svg",
     "static/media/spinner.svg": "/livedune/static/media/spinner.8273088f0fa2d5e4a243df8c0637d98c.svg",
@@ -9,11 +9,11 @@
     "static/media/google.svg": "/livedune/static/media/google.8a41309eb08dcbd9d1e65c052df264f6.svg",
     "index.html": "/livedune/index.html",
     "static/media/lock.svg": "/livedune/static/media/lock.2d89336126f43dd9622c4940e6c182fd.svg",
-    "main.9d263f21.css.map": "/livedune/static/css/main.9d263f21.css.map",
-    "main.0cfbae2e.js.map": "/livedune/static/js/main.0cfbae2e.js.map"
+    "main.c9cf7095.css.map": "/livedune/static/css/main.c9cf7095.css.map",
+    "main.f945ece0.js.map": "/livedune/static/js/main.f945ece0.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d263f21.css",
-    "static/js/main.0cfbae2e.js"
+    "static/css/main.c9cf7095.css",
+    "static/js/main.f945ece0.js"
   ]
 }
