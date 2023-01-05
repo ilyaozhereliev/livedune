@@ -24,7 +24,7 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path={`/${baseName}}`} element={<Authorization />} />
+          <Route path={`/${baseName}`} element={<Authorization />} />
           <Route
             path={`/${baseName}/registration`}
             element={<Registration />}
