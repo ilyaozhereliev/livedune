@@ -20,7 +20,7 @@ export const Authorization = () => {
   const actionButton = 'Регистрация';
 
   const navigateClick = () => {
-    navigate(`./${baseName}/registration`);
+    navigate(`/${baseName}/registration`);
   };
 
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
