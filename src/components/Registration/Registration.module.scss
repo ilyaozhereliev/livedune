@@ -1,0 +1,308 @@
+@use '../../assets/styles/constatnts.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
+
+.wrapper {
+  width: 100wv;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 496px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 38px;
+
+  @include semi-phone {
+    width: 343px;
+
+    margin-top: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  @include for-desktop-big {
+    zoom: 1.2;
+  }
+}
+
+.header {
+  font-size: 56px;
+  font-weight: 600;
+
+  color: $color__black;
+
+  @include semi-phone {
+    font-size: 40px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+  margin-top: 16px;
+
+  color: $color__grey;
+
+  @include semi-phone {
+    width: 237px;
+    font-size: 14px;
+
+    margin-top: 8px;
+  }
+}
+
+.social__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 32px;
+
+  button:first-child {
+    margin-right: 16px;
+  }
+
+  @include semi-phone {
+    flex-direction: column;
+
+    margin-top: 24px;
+
+    button:first-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.social__button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 16px;
+
+  background: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  p {
+    padding-left: 16px;
+    margin-right: auto;
+  }
+
+  @include semi-phone {
+    margin-bottom: 9px;
+
+    img {
+      margin-right: auto;
+    }
+
+    p {
+      margin-right: auto;
+      padding-left: 0;
+    }
+  }
+}
+
+.social__button:hover {
+  background: #f6f8ff;
+}
+
+.separator {
+  font-size: 16px;
+  margin-top: 12px;
+  color: $color__grey;
+
+  @include semi-phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+}
+
+.forms {
+  width: 100%;
+
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+
+    padding: 16px;
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: $color__black;
+
+    outline: none;
+
+    &.error {
+      border: 1px solid #f90043;
+    }
+  }
+
+  input::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #e6e6e6;
+  }
+
+  input:focus {
+    border: 1px solid #4e74f5;
+  }
+}
+
+.form__warning {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+
+    border: 1px solid #f90043;
+    border-radius: 12px;
+
+    padding: 16px;
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: $color__black;
+
+    outline: none;
+  }
+
+  input::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #e6e6e6;
+  }
+
+  input:focus {
+    border: 1px solid #f90043;
+  }
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+
+  margin-top: -8px;
+  margin-bottom: 16px;
+
+  color: #fb2424;
+}
+
+.submit__button {
+  height: 64px;
+  width: 100%;
+  background: $color__blue;
+  color: $color__white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  border: none;
+  border-radius: 64px;
+
+  cursor: pointer;
+
+  transition: all ease 0.1s;
+
+  &:hover {
+    background: #3966f8;
+  }
+
+  @include semi-phone {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}
+
+.helper__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: $color__black;
+
+  margin-bottom: 24px;
+}
+
+.helper__button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: $color__blue;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.promocode {
+  background: none;
+  border: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: $color__blue;
+
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,177 @@
+@use '../../assets/styles/constatnts.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
+
+header {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include semi-phone {
+    height: 60px;
+  }
+
+  @include for-desktop-big {
+    zoom: 1.2;
+  }
+}
+
+.logo {
+  height: 20px;
+
+  margin-bottom: 40px;
+  margin-top: 39px;
+  margin-left: 54px;
+
+  @include semi-phone {
+    height: 16px;
+
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 16px;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: $color__grey;
+
+  margin-right: 54px;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(80, 80, 80);
+  }
+
+  @include semi-phone {
+    margin: 18px 18px 24px;
+  }
+}
+
+.wrapper {
+  width: 100wv;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 689px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 163px;
+
+  @include semi-phone {
+    width: 343px;
+
+    margin-top: 121px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  @include for-desktop-big {
+    zoom: 1.2;
+  }
+}
+
+.header {
+  font-size: 56px;
+  font-weight: 600;
+
+  color: $color__black;
+
+  @include semi-phone {
+    width: 272px;
+
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
+
+.description {
+  width: 562px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 30px;
+
+  margin-top: 16px;
+
+  color: $color__grey;
+
+  @include semi-phone {
+    width: 343px;
+    font-size: 14px;
+    line-height: 24px;
+
+    margin-top: 8px;
+  }
+}
+
+.submit__button {
+  height: 64px;
+  width: 354px;
+
+  background: $color__blue;
+  color: $color__white;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 13px;
+
+  margin-top: 40px;
+  margin-bottom: 24px;
+
+  border: none;
+  border-radius: 64px;
+
+  cursor: pointer;
+
+  transition: all ease 0.1s;
+
+  &:hover {
+    background: #3966f8;
+  }
+
+  @include semi-phone {
+    width: 343px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.helper__button {
+  background: none;
+  border: none;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $color__blue;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,93 @@
+@use '../../assets/styles/constatnts.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include semi-phone {
+    height: 60px;
+  }
+
+  @include for-desktop-big {
+    zoom: 1.2;
+  }
+}
+
+.logo {
+  height: 20px;
+
+  margin-bottom: 40px;
+  margin-top: 39px;
+  margin-left: 54px;
+
+  @include semi-phone {
+    height: 16px;
+
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 16px;
+  }
+}
+
+.header__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footnote {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 24px;
+  color: $color__grey;
+
+  @include semi-phone {
+    display: none;
+  }
+}
+
+.button {
+  width: 170px;
+  height: 51px;
+
+  background: $color__blue;
+  color: $color__white;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+
+  margin-right: 54px;
+
+  border: none;
+  border-radius: 100px;
+
+  transition: all ease 0.1s;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #3966f8;
+  }
+
+  @include semi-phone {
+    width: 113px;
+    height: 40px;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 16px;
+  }
+}
