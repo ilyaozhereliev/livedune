@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/livedune/static/css/main.1e3ab3a5.css",
+    "main.css": "/livedune/static/css/main.ef6d3dcd.css",
     "main.js": "/livedune/static/js/main.57dc48b0.js",
     "static/media/logo.svg": "/livedune/static/media/logo.eedffd0ffec3f07e96bce1ad310ddda7.svg",
     "static/media/letter.svg": "/livedune/static/media/letter.56239c581cc49cec75a29c79a3276c78.svg",
@@ -9,11 +9,11 @@
     "static/media/google.svg": "/livedune/static/media/google.8a41309eb08dcbd9d1e65c052df264f6.svg",
     "index.html": "/livedune/index.html",
     "static/media/lock.svg": "/livedune/static/media/lock.2d89336126f43dd9622c4940e6c182fd.svg",
-    "main.1e3ab3a5.css.map": "/livedune/static/css/main.1e3ab3a5.css.map",
+    "main.ef6d3dcd.css.map": "/livedune/static/css/main.ef6d3dcd.css.map",
     "main.57dc48b0.js.map": "/livedune/static/js/main.57dc48b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e3ab3a5.css",
+    "static/css/main.ef6d3dcd.css",
     "static/js/main.57dc48b0.js"
   ]
 }
