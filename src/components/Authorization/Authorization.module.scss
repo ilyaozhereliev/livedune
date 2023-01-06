@@ -11,6 +11,7 @@
 
 .container {
   width: 496px;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -22,9 +23,7 @@
   @include semi-phone {
     width: 343px;
 
-    margin-top: 40px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 40px 16px 35px 16px;
   }
 
   @include for-desktop-big {
@@ -277,8 +276,6 @@
   font-weight: 600;
   font-size: 14px;
   color: $color__blue;
-
-  margin-bottom: 24px;
 
   transition: all ease 0.1s;
 
